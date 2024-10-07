@@ -1,0 +1,65 @@
+body {
+    min-height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    color: black;
+}
+
+#index-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2%;
+
+    
+}
+
+header nav ul li a {
+    text-decoration: none;
+    display: inline-block; /* Fixade så att bordern inte klippte igenom texten*/
+    box-shadow: 1px 1px 6px rgba(177, 29, 215, 0.5);
+    padding: 10%;
+    margin: 3vw;
+    
+    border-radius: 1rem;
+
+}
+
+main {
+    display: grid;
+    max-width: 90%;
+}
+
+section {
+
+}
+
+article {
+
+}
+
+footer {
+    font-weight: 700;
+    text-align: center;
+}
