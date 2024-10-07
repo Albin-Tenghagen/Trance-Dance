@@ -4,23 +4,24 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: whitesmoke;
-    color: black;
+    /* background-color: whitesmoke; */
+    background: rgba(123, 53, 6, 0887);
+    color: white;
 }
 
 #index-container {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr auto;
     justify-items: center;
     align-items: center;
 }
 
 header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-
 }
 
 
@@ -31,35 +32,66 @@ header nav ul {
     justify-content: space-around;
     align-items: center;
     gap: 2%;
-
-    
 }
 
 header nav ul li a {
     text-decoration: none;
     display: inline-block; /* Fixade så att bordern inte klippte igenom texten*/
-    box-shadow: 1px 1px 6px rgba(177, 29, 215, 0.5);
+    box-shadow: 0px 0px 5px black;
     padding: 10%;
-    margin: 3vw;
     
+    margin: 3vw;
     border-radius: 1rem;
-
+    color: white;
 }
 
 main {
     display: grid;
-    max-width: 90%;
+    justify-items: center; /*centrerar rubrik & listan*/
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto repeat(auto, 1fr);
+    background: radial-gradient(purple, rgba(123, 53, 6, 0887));
+    box-shadow: 0px 0px 2px black;
+    border-radius: 1rem;
+    margin: clamp(2%, 5%, 7%);
+    
 }
 
 section {
+    margin: auto; /*centrerar elementet*/
+    width: 90%;
+    text-align: center;
+    /* background: radial-gradient(purple, rgba(123, 53, 6, 0887)); */
+    display: block;
+    padding: 10px;
+}
 
+.history-section {
+    background: radial-gradient(purple, rgba(123, 53, 6, 0887));
+    border-radius: 1rem;
+    box-shadow: 0px 0px 2px black;
+    width: 90%
+    
 }
 
 article {
-
+    border: 1px solid black;
+    margin: 30px;
+    padding: 2%;
+    border-radius: 4rem;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    
+}
+article:hover {
+    transform: translateY(5px);
+}
+article h3 {
+    font-style: italic;    
 }
 
 footer {
     font-weight: 700;
     text-align: center;
+    
 }
