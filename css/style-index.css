@@ -118,7 +118,7 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto auto auto;
-        grid-auto-flow: dense;
+        /* grid-auto-flow: dense; */
         
     }
 
@@ -132,16 +132,20 @@ footer {
    }
     .main-section {
         grid-column: auto / span 4;
-        grid-auto-flow: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;  /* Two equal columns */
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;     
     } 
     .section-article {
-        max-width: 50%;
+        grid-column: auto / span 1;
+        grid-row: auto / span 1;
+        max-width: 100%;
     }
-    .section-img {
-    
-    }
+   
+}
+
+@media (min-width: 913px) {
 
 
-
-    
 }
