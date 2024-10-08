@@ -66,6 +66,17 @@ section {
     padding: 10px;
 }
 
+#artist-rekomend {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    word-break: normal;
+}
+
+.artist {
+    min-width: clamp(150px, 200px, 300px)
+}
+
 .history-section {
     background: radial-gradient(purple, rgba(123, 53, 6, 0887));
     border-radius: 1rem;
