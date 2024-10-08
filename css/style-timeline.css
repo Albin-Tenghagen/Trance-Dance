@@ -58,7 +58,7 @@ figure img:hover {
     
 }
 
-section {
+.subgenres-section {
     display: grid;
     /* display: block; */
     grid-template-columns: 1fr;
@@ -97,12 +97,16 @@ section {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-@media (min-width: 600) and (max-width: 912px) {
+footer {
+    font-size: clamp(1rem, 1.5rem, 2rem);
+    text-align: center;
+}
+
+@media (min-width: 600px) and (max-width: 912px) {
     .subgenres-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto;
-        
         width: 90%;
         text-align: center;
         /* background: radial-gradient(purple, rgba(123, 53, 6, 0887)); */
@@ -110,9 +114,16 @@ section {
         margin: auto; 
     }
     .subgenre-articles {
+        box-sizing: border-box;
         grid-column: span 1;
-        width: 100%;
-        margin: 0 auto;
+        gap: 2%;
+        
+    }
+    .subgenre-articles-bottom {
+        box-sizing: border-box;
+        grid-column: auto / span 2;
+        width: 50%;
+        justify-self: center;
         
     }
     .subgenre-pics {
