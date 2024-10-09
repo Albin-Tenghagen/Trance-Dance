@@ -16,6 +16,7 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
 }
 
 header nav ul {
@@ -47,23 +48,19 @@ main {
     box-shadow: 0px 0px 2px black;
     border-radius: 1rem;
     margin: clamp(2%, 5%, 7%);
+    width: 90%;
     
 }
 
 section {
     margin: auto; /*centrerar elementet*/
-    width: 90%;
+    /* width: 90%; */
     text-align: center;
     /* background: radial-gradient(purple, rgba(123, 53, 6, 0887)); */
     display: block;
     padding: 10px;
 }
-figure img {
-    max-width: 100%; /* Image will scale down to fit the container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Avoid extra spacing beneath the image */
-    transition: transform 0.3s ease-in-out;
-} 
+
 
 #artist-rekomend {
     display: flex;
@@ -93,7 +90,7 @@ figure img {
 
 article {
     border: 1px solid black;
-    margin: 30px;
+    margin: 2%;
     padding: 2%;
     border-radius: 4rem;
     box-sizing: border-box;
@@ -104,14 +101,19 @@ article:hover {
     transform: translateY(5px);
 }
 article h3 {
-    font-style: italic;    
+    font-style: italic;
+    text-decoration: underline;
 }
 
 footer {
-    font-weight: 700;
+    height: 15vh;
+    margin-bottom: 0;
+    font-size: clamp(1rem, 1.5rem, 2rem);
     text-align: center;
-    
+    background: linear-gradient(purple, rgba(18, 18, 171));
+    opacity: 0.8;
 }
+
 
 @media (min-width: 600px) and (max-width: 912px) {
     .main-index {
@@ -147,6 +149,31 @@ footer {
 }
 
 @media (min-width: 913px) {
+    .main-section {
+        grid-column: auto / span 4;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr) ;  /* Two equal columns */
+        grid-template-rows: auto auto 1fr auto;
+        grid-gap: 10px;     
+    } 
+    main h2 {
+        grid-row: 1 / 1;
+        grid-column: auto / span 6;
+        justify-self: center;
+       }
+       main ul {
+        grid-row: 2 / span 1;
+        grid-column: auto / span 6;
+       }
+    .section-article {
+        grid-column: auto / span 2;
+        grid-row: auto / span 1;
+        max-width: 100%;
+    }   
+    .article-bottom {
+        grid-column: 2 / span 4;
+        grid-row: 2 / 2;
+    }
 
 
 }
