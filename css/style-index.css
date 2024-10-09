@@ -5,8 +5,8 @@ body {
     margin: 0;
     padding: 0;
     /* background-color: whitesmoke; */
-    background: radial-gradient(rgba(18, 18, 171), purple);
     color: antiquewhite;
+    background-color: rgb(18, 18, 171);
 }
 
 header {
@@ -58,7 +58,7 @@ section {
     font-size: clamp(1rem, 2vw, 2.5rem);
 }
 .history-section {
-    background: radial-gradient(purple, rgba(123, 53, 6, 0887));
+    background: radial-gradient(rgba(18, 18, 171), purple);
     border-radius: 1rem;
     box-shadow: 0px 0px 2px black;
     width: 90%;
@@ -75,11 +75,11 @@ section {
     margin: clamp(1%, auto, 3%);
     box-shadow: 0px 0px 2px black;
     border-radius: 1rem;
-    background: radial-gradient(purple, rgba(123, 53, 6, 0887));
+    background: radial-gradient(rgba(18, 18, 171), purple);
 }
 
 .artist {
-    min-width: clamp(150px, 200px, 300px);
+    min-width: clamp(150px, 25vw, 400px);
 
 }
 
@@ -102,12 +102,10 @@ article h3 {
 }
 
 footer {
-    height: 15vh;
-    margin-bottom: 0;
+    height: 10vh;
     font-size: clamp(1rem, 1.5rem, 2rem);
     text-align: center;
-    background: linear-gradient(purple, rgba(18, 18, 171));
-    opacity: 0.8;
+    background: linear-gradient(rgba(18, 18, 171), purple);
 }
 
 
