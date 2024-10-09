@@ -6,10 +6,8 @@ body {
     padding: 0;
     /* background-color: whitesmoke; */
     background: radial-gradient(rgba(18, 18, 171), purple);
-    color: white;
+    color: antiquewhite;
 }
-
-
 
 header {
     display: flex;
@@ -18,7 +16,6 @@ header {
     align-items: center;
     
 }
-
 header nav ul {
     display: flex;
     flex-direction: row;
@@ -27,7 +24,6 @@ header nav ul {
     align-items: center;
     gap: 2%;
 }
-
 header nav ul li a {
     text-decoration: none;
     display: inline-block; /* Fixade så att bordern inte klippte igenom texten*/
@@ -44,12 +40,12 @@ main {
     justify-items: center; /*centrerar rubrik & listan*/
     grid-template-columns: 1fr;
     grid-template-rows: auto auto repeat(auto, 1fr);
-    background: radial-gradient(purple, rgba(123, 53, 6, 0887));
+    background: radial-gradient(rgba(18, 18, 171), purple);
     box-shadow: 0px 0px 2px black;
     border-radius: 1rem;
     margin: clamp(2%, 5%, 7%);
+    font-size: clamp(1rem, 2vw, 2.5rem);
     width: 90%;
-    
 }
 
 section {
@@ -59,8 +55,16 @@ section {
     /* background: radial-gradient(purple, rgba(123, 53, 6, 0887)); */
     display: block;
     padding: 10px;
+    font-size: clamp(1rem, 2vw, 2.5rem);
 }
-
+.history-section {
+    background: radial-gradient(purple, rgba(123, 53, 6, 0887));
+    border-radius: 1rem;
+    box-shadow: 0px 0px 2px black;
+    width: 90%;
+    margin-top: 2%;
+    
+}
 
 #artist-rekomend {
     display: flex;
@@ -79,14 +83,6 @@ section {
 
 }
 
-.history-section {
-    background: radial-gradient(purple, rgba(123, 53, 6, 0887));
-    border-radius: 1rem;
-    box-shadow: 0px 0px 2px black;
-    width: 90%;
-    margin-top: 2%;
-    
-}
 
 article {
     border: 1px solid black;
