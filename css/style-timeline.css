@@ -111,6 +111,10 @@ footer {
 }
 
 @media (min-width: 600px) and (max-width: 912px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+   
     .subgenres-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -140,4 +144,35 @@ footer {
     }
 
     
+}
+
+@media (min-width: 913px) {
+    .subgenres-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows: auto auto auto;
+        width: 90%;
+        text-align: center;
+        /* background: radial-gradient(purple, rgba(123, 53, 6, 0887)); */
+        padding: 10px;
+        margin: auto; 
+    }
+    .subgenre-articles {
+        box-sizing: border-box;
+        grid-column: span 2;
+        gap: 2%;
+        overflow: hidden;
+        
+    }
+    .bottom-bigscreen {
+        box-sizing: border-box;
+        grid-column: auto / span 3;
+        width: 66.666%;
+        justify-self: center;
+        
+    }
+    .subgenre-pics {
+        width: 100%;
+        height: auto;
+    }
 }
