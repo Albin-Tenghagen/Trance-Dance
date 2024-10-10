@@ -32,7 +32,6 @@ header nav ul li a {
     display: inline-block; /* Fixade så att bordern inte klippte igenom texten*/
     box-shadow: 0px 0px 5px black;
     padding: 10%;
-    
     margin: 3vw;
     border-radius: 1rem;
     color: white;
@@ -108,7 +107,7 @@ footer {
     margin-bottom: 0;
     font-size: clamp(1rem, 1.5rem, 2rem);
     text-align: center;
-    background: linear-gradient(purple, rgba(18, 18, 171));
+    background: linear-gradient(rgba(18, 18, 171), purple);
     opacity: 0.8;
 }
 
