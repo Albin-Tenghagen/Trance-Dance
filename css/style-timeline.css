@@ -66,6 +66,7 @@ figure img:hover {
 
 .subgenres-section {
     display: grid;
+    max-height: 50vh;
     /* display: block; */
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);

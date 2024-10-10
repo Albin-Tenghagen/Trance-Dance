@@ -80,8 +80,9 @@ section {
 }
 
 .artist {
+    box-sizing: content-box;
     min-width: clamp(150px, 25vw, 400px);
-
+    max-height: 85vh;
 }
 
 
